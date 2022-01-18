@@ -54,7 +54,7 @@ const toggleItems = (e) => {
   }
 };
 const addFunction = () => {
-  if (input.value === "") {
+  if (input.value.trim() === "") {
     alert("You didn't type anything");
   } else {
     toDoArray.push({ job: input.value, isChecked: "false" });
